@@ -1,5 +1,5 @@
 module "ec2_module" {
-    source = ".terraform-aws-instance"
+    source = "../terraform-aws-instance"
         ami_id = var.ami_id
     # sg_ids = var.sg_ids
     instance_type = var.instance_type
