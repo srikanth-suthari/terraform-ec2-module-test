@@ -10,6 +10,10 @@ output "public_ip" {
     value = module.ec2_module.ec2_public_ip
 }
 
+output "instance_id" {
+    value = module.ec2_module.ec2_instance_type
+}
+
 # output "pub_ip" {
 #     value = module.catalogue.public_ip
 # }
