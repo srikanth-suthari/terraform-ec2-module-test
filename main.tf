@@ -14,9 +14,13 @@ output "instance_type" {
     value = module.ec2_module.ec2_instance_type
 }
 
-# output "instance_id" {
-#     value = aws_instance.this.ec2_instance_id
-# }
+output "arn" {
+    value = module.ec2_module.instance_arn
+}
+
+output "instance_id" {
+    value = module.ec2_module.instance_id
+}
 # output "pub_ip" {
 #     value = module.catalogue.public_ip
 # }
