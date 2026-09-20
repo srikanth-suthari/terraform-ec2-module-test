@@ -1,5 +1,7 @@
 variable "ami_id" {
     default = "ami-0220d79f3f480ecf5"
+    type = string
+    description = "Please enter the ami_id"
 }
 
 # variable "sg_ids" {
