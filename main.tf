@@ -1,26 +1,27 @@
 module "ec2_module" {
     source = "../terraform-aws-instance"        #Importing the module from the local folder or dir
+    count = 2
     ami_id = var.ami_id
     # sg_ids = var.sg_ids
     instance_type = var.instance_type
     tags = var.tags
 }
 
-output "public_ip" {
-    value = module.ec2_module.ec2_public_ip
-}
+# output "public_ip" {
+#     value = module.ec2_module.ec2_public_ip
+# }
 
-output "instance_type" {
-    value = module.ec2_module.ec2_instance_type
-}
+# output "instance_type" {
+#     value = module.ec2_module.ec2_instance_type
+# }
 
-output "arn" {
-    value = module.ec2_module.instance_arn
-}
+# output "arn" {
+#     value = module.ec2_module.instance_arn
+# }
 
-output "instance_id" {
-    value = module.ec2_module.instance_id
-}
+# output "instance_id" {
+#     value = module.ec2_module.instance_id
+# }
 # output "pub_ip" {
 #     value = module.catalogue.public_ip
 # }
